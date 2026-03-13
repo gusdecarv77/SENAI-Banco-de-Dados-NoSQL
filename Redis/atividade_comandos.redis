@@ -1,0 +1,21 @@
+# Atividade Redis (13/03/26) - Aluno: Gustavo de Carvalho - SENAI Fatesg
+
+# Exemplo 1: Strings
+SET nome "Joao"
+GET nome
+
+# Exemplo 2: Listas
+LPUSH frutas "maca" "banana" "laranja"
+LRANGE frutas 0 -1
+
+# Exemplo 3: Hashes
+HSET usuario:123 nome "Maria"
+HSET usuario:123 idade "30" 
+HSET usuario:123 cidade "Sao Paulo" 
+HGET usuario:123 nome
+HGETALL usuario:123
+
+# Exemplo 4: Contador
+SET visitas 0
+INCR visitas
+GET visitas
