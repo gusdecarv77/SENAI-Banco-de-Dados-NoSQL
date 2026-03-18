@@ -1,0 +1,56 @@
+🗄️ Atividades Redis (Parte 2 e Parte 3)
+
+Este repositório contém as resoluções das Partes 2 e 3 da atividade de banco de dados NoSQL (Redis), desenvolvida no curso de Engenharia de Inteligência Artificial no SENAI Fatesg.
+
+===================================================================================================================================================
+
+📌 Parte 2: Testes de Desempenho e Estruturas de Dados (Back-end)
+
+## Objetivo
+
+Demonstrar os quatro principais pilares de uso do banco de dados em memória Redis através de testes práticos em Python:
+
+1. Alto Desempenho e Escalabilidade: Teste de tempo de leitura e escrita (I/O) inserindo e recuperando 1.000 chaves sequenciais.
+
+2. Flexibilidade: Armazenamento e leitura de diferentes estruturas de dados suportadas nativamente (Strings, Listas, Hashes e dados binários em Base64).
+
+3. Baixa Latência: Simulação do uso do Redis como sistema de cache para recuperação na casa dos milissegundos.
+
+
+## Como Executar (Parte 2)
+
+Com o servidor Redis ativo na porta padrão (6379), execute o script de testes no terminal:
+
+    python redis_test.py
+
+===================================================================================================================================================
+
+🖼️ Parte 3: Armazenamento e Recuperação de Imagens (Front-end)
+
+## Objetivo
+
+Demonstrar a integração do Redis com uma aplicação web, armazenando e recuperando arquivos binários pesados.
+
+    *Back-end: O script salvar_imagem.py lê uma imagem local (Onca.png), converte seus dados para uma string Base64 e a armazena no banco de dados.
+
+    **Front-end: Um servidor web criado com Flask (app.py) se conecta ao Redis, recupera a string Base64 e a injeta diretamente no HTML, renderizando a imagem no navegador de forma dinâmica.
+
+## Como Executar (Parte 3)
+
+1. Salve a imagem no banco executando:
+
+    python salvar_imagem.py
+
+2. Suba a interface web:
+
+    python app.py
+
+3. Acesse http://127.0.0.1:5000 no seu navegador.
+
+===================================================================================================================================================
+
+📸 Comprovações
+
+Os prints das execuções no terminal (comprovando os testes da Parte 2 e a ingestão no banco da Parte 3) e a renderização da interface web no navegador estão anexados neste repositório.
+
+Autor: Gustavo de Carvalho

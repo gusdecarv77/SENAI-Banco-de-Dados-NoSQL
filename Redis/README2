@@ -1,0 +1,16 @@
+# 🗄️ ATIVIDADE REDIS (PARTE 2) -- Testes de Desempenho e Estruturas de Dados (Back-end)
+
+Este repositório contém a resolução da **Atividade - Redis (Parte 2)**, desenvolvida no curso de **Engenharia de Inteligência Artificial** no **SENAI Fatesg**.
+
+## 📌 Objetivo do Projeto
+O objetivo deste script em Python é demonstrar os quatro principais pilares de uso do banco de dados em memória **Redis** através de testes práticos:
+
+1. **Alto Desempenho e Escalabilidade:** Teste de tempo de leitura e escrita (I/O) inserindo e recuperando 1.000 chaves sequenciais.
+2. **Flexibilidade:** Armazenamento e leitura de diferentes estruturas de dados suportadas nativamente pelo Redis (Strings, Listas, Hashes e dados binários codificados em Base64).
+3. **Baixa Latência:** Simulação do uso do Redis como sistema de cache para recuperação ultrarrápida de informações na casa dos milissegundos.
+
+## 🚀 Como Executar
+Com o servidor Redis ativo e a biblioteca `redis` instalada no Python, execute o script principal:
+```bash
+python redis_test.py
+```
